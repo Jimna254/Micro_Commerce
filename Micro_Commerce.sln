@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theJituCommerce", "theJituCommerce\theJituCommerce.csproj", "{666973F5-FD4F-45BC-979A-BCBD4603E53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Micro_Commerce_Auth", "theJituCommerce_Auth\Micro_Commerce_Auth.csproj", "{AA96B543-0067-461C-ADE6-4013BAACE2D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,16 +17,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{666973F5-FD4F-45BC-979A-BCBD4603E53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{666973F5-FD4F-45BC-979A-BCBD4603E53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{666973F5-FD4F-45BC-979A-BCBD4603E53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{666973F5-FD4F-45BC-979A-BCBD4603E53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{666973F5-FD4F-45BC-979A-BCBD4603E53F} = {7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}
+		{AA96B543-0067-461C-ADE6-4013BAACE2D8} = {7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EDC3263-B0BB-40AA-8EC4-F594F8B0EE15}
