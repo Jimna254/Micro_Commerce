@@ -1,14 +1,8 @@
-using Micro_Commerce_Auth.Extensions;
-using Micro_Commerce_Auth.Services;
-using Micro_Commerce_Auth.Services.IServices;
-using Micro_Commerce_Auth.Utilities;
-using Microsoft.AspNetCore.Identity;
+using Micro_Commerce_Products.Data;
+using Micro_Commerce_Products.Extensions;
+using Micro_Commerce_Products.Services;
+using Micro_Commerce_Products.Services.IServices;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using theJituCommerce_Auth.Data;
-using theJituCommerce_Auth.Models;
-using theJituCommerce_Auth.Services;
-using theJituCommerce_Auth.Services.IServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Add DbContext
 //Add Db Connection
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -26,20 +21,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 });
 
+// Register Services
+builder.Services.AddScoped<IProductInterface , ProductService>();
 
-//Register IdentityFramework
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
-
-//Register Services
-builder.Services.AddScoped<IUserService , UserService>();
-builder.Services.AddScoped<IJWtTokenGenerator , JWTServices>();
 
 //Register Automapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-//configure JWtOptions 
-builder.Services.Configure<JWTOptions>(builder.Configuration.GetSection("JwtOptions"));
-
 
 
 
@@ -51,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 //Run any Pending Migrations
 app.UseMigration();
 

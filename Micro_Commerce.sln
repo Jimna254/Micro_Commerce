@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Micro_Commerce_Auth", "theJituCommerce_Auth\Micro_Commerce_Auth.csproj", "{AA96B543-0067-461C-ADE6-4013BAACE2D8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Micro_Commerce Cuopons", "Micro_Commerce Cuopons\Micro_Commerce Cuopons.csproj", "{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro_Commerce_Products", "Micro_Commerce_Products\Micro_Commerce_Products.csproj", "{31AD6844-1601-485F-B7E0-129EE38B8C16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +25,22 @@ Global
 		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA96B543-0067-461C-ADE6-4013BAACE2D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AD6844-1601-485F-B7E0-129EE38B8C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AD6844-1601-485F-B7E0-129EE38B8C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AD6844-1601-485F-B7E0-129EE38B8C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AD6844-1601-485F-B7E0-129EE38B8C16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AA96B543-0067-461C-ADE6-4013BAACE2D8} = {7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}
+		{4045F5F3-3BCF-436F-860B-B3AEEBD9D3B8} = {7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}
+		{31AD6844-1601-485F-B7E0-129EE38B8C16} = {7E23DFF7-7ACC-4C85-B29B-28CB2D45C739}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EDC3263-B0BB-40AA-8EC4-F594F8B0EE15}

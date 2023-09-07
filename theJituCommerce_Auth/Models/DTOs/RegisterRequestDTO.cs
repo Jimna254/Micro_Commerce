@@ -13,5 +13,8 @@ namespace theJituCommerce_Auth.Models.DTOs
         public string Password { get; set; } = string.Empty;
         [Required]
         public string PhoneNumber { get; set; } = string.Empty;
+
+        //optional
+        public string? Role { get; set; } = string.Empty;
     }
 }

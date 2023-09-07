@@ -56,6 +56,21 @@ namespace theJituCommerce_Auth.Controllers
             // Successful login
             return Ok(response);
         }
+        [HttpPost("AssignUserRole")]
+        public async Task<ActionResult<ResponseDTO>> AssignRole(RegisterRequestDTO registerRequestDto)
+        {
+            var response = await _iuserService.AssignUserRole(registerRequestDto.Email, registerRequestDto.Role);
+            if (!response)
+            {
+                //error
+                _response.IsSuccess = false;
+                _response.Message = "Error Occured";
+
+                return BadRequest(_response);
+            }
+            _response.Result = response;
+            return Ok(_response);
+        }
 
 
     }
